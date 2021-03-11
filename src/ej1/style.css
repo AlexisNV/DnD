@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+#pieces {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 660px;
+  overflow: scroll;
+  width: 600px;
+  margin: auto;
+  justify-content: center;
+}
+
+#puzzle {
+  border: 1px solid black;
+  width: 665px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.piece {
+  width: 167px;
+  height: 165.5px;
+  background-size: cover;
+  margin: 10px;
+}
+
+.placeholder {
+  background-color: #f2f2f2;
+  outline: 1px solid #333;
+  width: 166.2px;
+  height: 165px;
+  transition: 1s;
+}
+
+.placeholder.hover {
+  background-color: orange;
+}
+
+.placeholder .piece {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
